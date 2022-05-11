@@ -1,0 +1,13 @@
+1) sudo apt  update
+
+2) sudo apt install -y docker.io (Hit Yes if a pop up comes once that command is executed)
+
+sudo systemctl status docker
+
+3) sudo systemctl enable --now docker
+
+4) sudo usermod -aG docker $USER
+
+5) docker --version
+
+6) sudo docker run hello-world

@@ -1,0 +1,19 @@
+sudo -i
+
+1) nano Dockerfile (And write the below code in it and save)
+
+
+sudo apt install nginx
+
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+
+2) docker build -t html-server-image:v1 .
+
+3) docker images (You can confirm that the above command has worked by running this command)
+
+4) docker run -d -p 80:80 html-server-image:v1 (Run the following command to run the HTML container server)
+
+localhost:80 (run it on browser)
+
+5) Open browser and type "localhost:80"

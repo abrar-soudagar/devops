@@ -1,0 +1,30 @@
+1) Open Git Bash
+
+2) mkdir DevOps
+
+3) cd DevOps
+
+4) git init
+
+5) nano file1.txt
+
+6) git add .
+
+7) git commit -m "This is my first commit"
+
+8) git status & git log (Miscellaneous commands)
+
+9) git config --global user.name "Your username"
+
+10) git config --global user.email "youremail@gmail.com"
+
+11) Now to github.com on your desktop. Log in and create a new repository in your account.
+
+12) Once done go to your new repository and copy the https link of your repository
+
+13) Go back to Git bash and type
+	git remote add origin https://github.com/....    <https link of your repository>
+
+14) git push -u origin master
+
+15) Now go back to gitub.com on your browser and check the master branch of your repository. You will see "file1.txt"  in it.
